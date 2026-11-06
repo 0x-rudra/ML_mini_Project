@@ -32,6 +32,23 @@ This project implements a text classification pipeline to detect whether a given
 
 ---
 
+## 🚀 Usage & Dataset Path Setup
+
+When running the notebook (`Spam_Detector.ipynb`), check **Cell 2** and set the dataset path based on where you are running the project:
+
+- **If using Google Colab:**
+  Upload `spam_dataset.csv` to the `/content/sample_data/` directory (via the Files panel in the left sidebar):
+  ```python
+  data = pd.read_csv('/content/sample_data/spam_dataset.csv')
+  ```
+
+- **If running locally (VS Code / Jupyter):**
+  ```python
+  data = pd.read_csv('spam_dataset.csv')
+  ```
+
+---
+
 ## 📊 Model Performance
 
 Tested on a 35% test split (~1,951 samples):
